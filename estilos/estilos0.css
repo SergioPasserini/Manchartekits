@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.encabezado{
+    background-image: url("../multimedia/Fondos/lluvia_textura.jpg");
+
+}
+.encabezado__logo{
+    margin: 10px 10px 10px 5px;
+    border-radius: 10px;
+}
+.principal__titulo{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;}
+.principal{
+    background-image: url("../multimedia/Fondos/Blackboard_texture.jpg");
+    background-size: contain;
+}
+.principal__menu li a{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-decoration:none;
+    display: block;
+}
+.principal__tabla{
+    background-color: rgb(233, 216, 64);
+}
+footer{
+    background-image: url("../multimedia/Fondos/lluvia_textura.jpg");
+    background-size: inherit;
+}
+footer p {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}

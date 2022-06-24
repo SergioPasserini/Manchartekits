@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../multimedia/Iconos/color.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../multimedia/logos/Mancharte.jpg" width="290" height="50" /></a>
+            <a href="https://wa.me/5491136568958"><img src="../multimedia/Iconos/whasapp2.png" alt="Whatsapp" width="30" height="30"></a>
+            <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram" width="30" height="30"></a>
+            <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook" width="30" height="30"></a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h1>
+                Creando infancias felices
+            </h1>
+            <article>
+                <h3>Menu</h3>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="Catalogo.html">Catalogo</a>
+                    </li>
+                    <li>
+                        <a href="Baul.html">Baul de ideas</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>Contacto</h3>
+                <form>
+                    <div><!-- Cuadros de texto -->
+                        <label for="nombre"></label>
+                        <input type="text" placeholder="Indique su nombre y apellido" name="nombre">
+                    </div>
+                    <div>
+                        <label for="celular"></label>
+                        <input type="text" placeholder="Indique su nuemro de celular" name="celular">
+                    </div>
+                    <div>
+                        <label for="correo"></label>
+                        <input type="email" name="correo" placeholder="su@email.com">
+                    </div>
+                    <div><!--- boton radio-->
+                        <label for="client">¿Ya es cliente?</label>
+                        <input type="radio" value="si" name="client">Si
+                        <input type="radio" value="no" name="client">No
+                    </div>
+                    <div><!-- menu desplegable-->
+                        <label for="conocimento"></label>¿Como nos conoció?
+                        <select name="conocimento" id="">
+                            <option value="Redes_soc">Redes sociales</option>
+                            <option value="diarios">Medios impresos </option>
+                            <option value="conocidos">Amigos</option>
+                            <option value="web">Nuesto sitio web</option>
+                        </select>
+                    </div>
+                    <div><!-- comentario-->
+                        <label for="comentario"></label>
+                        <textarea name="" id="" cols="30" rows="10" name="comentario">
+                        </textarea>
+                    </div>
+                    <div><!-- checkbox-->
+                        <label for="promociones"></label>
+                        <input type="checkbox" name="promociones" value="E-mail">¿Desea recibir nuestras promociones via E-mail?
+                        <input type="checkbox" name="promociones" value="Wpp">¿Desea recibir nuestras promociones via Whatsapp?
+                    </div>
+                    <div><!-- Botones-->
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar contenido">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>2022 ManchArte Kits, Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

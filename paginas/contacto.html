@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../multimedia/Iconos/color.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="Catalogo.html">Catalogo</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="Catalogo.html#1">De 0 a 3 años</a>
+                        </li>
+                        <li>
+                            <a href="Catalogo.html#2">De 3 a 6 años</a>
+                        </li>
+                        <li>
+                            <a href="Catalogo.html#3">Más de 7 años</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Baul.html">Baul de ideas</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <a href="../index.html" class="encabezado__logo">
+                <img src="../multimedia/logos/Mancharte.jpg" width="290" height="50">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="principal">
+            <article class="principal__titulo">
+                <h1>
+                    Creando infancias felices
+                </h1>
+            </article>
+            <article class="contacto">
+                <h3 class="contacto__titulo">Contacto</h3>
+                <form class="formulario">
+                    <div class="formulario__nombre">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Indique su nombre y apellido" name="nombre">
+                    </div>
+                    <div class="formulario__celular">
+                        <label for="celular">Numero de celular</label>
+                        <input type="text" placeholder="Indique su nuemro de celular" name="celular">
+                    </div>
+                    <div class="formulario__correo">
+                        <label for="correo"><p>Correo electronico</label>
+                        <input type="email" name="correo" placeholder="su@email.com">
+                    </div>
+                    <div class="formulario_cliente ">
+                        <label for="client">¿Ya es cliente?</label>
+                        <input type="radio" value="si" name="client">Si
+                        <input type="radio" value="no" name="client">No
+                    </div>
+                    <div class="formulario__conocimiento">
+                        <label for="conocimento"></label>¿Como nos conoció?
+                        <select name="conocimento" id="">
+                            <option value="Redes_soc">Redes sociales</option>
+                            <option value="diarios">Medios impresos </option>
+                            <option value="conocidos">Amigos</option>
+                            <option value="web">Nuesto sitio web</option>
+                        </select>
+                    </div>
+                    <div class="formulario__comentario">
+                        <label for="comentario"></label>
+                        <textarea name="" id="" cols="30" rows="10" name="comentario">
+                        </textarea>
+                    </div>
+                    <div class="formulario__checkbox">
+                        <label for="promociones"></label>
+                        <input type="checkbox" name="promociones" value="E-mail" class="formulario__checkbox__mail">¿Desea recibir nuestras promociones via
+                        E-mail?
+                        <input type="checkbox" name="promociones" value="Wpp" class="formulario__checkbox__wpp">¿Desea recibir nuestras promociones via
+                        Whatsapp?
+                    </div>
+                    <div class="formulario__botones">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
+            </article>
+            <article class="principal__redes">
+                <a href="https://wa.me/5491136568958"><img src="../multimedia/Iconos/whasapp2.png" alt="Whatsapp"
+                        width="50" height="50"></a>
+                <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram"
+                        width="50" height="50"></a>
+                <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook"
+                        width="50" height="50"></a>
+            </article>
+        </section>
+    </main>
+    <footer class="pie">
+        <p class="pie__texto">2022 ManchArte Kits, Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
