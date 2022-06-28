@@ -12,8 +12,14 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
+    <!-- encabezado, menu, logo -->
     <header class="encabezado">
         <nav>
+            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <img src="../multimedia/Iconos/menu.svg" alt=""class="menuh">
+                <img src="../multimedia/Iconos/x.svg" class="cerrar" height="55px">
+            </label>  
             <ul class="menu">
                 <li>
                     <a href="../index.html">Home</a>
@@ -47,7 +53,7 @@
                 </a>
         </nav>
     </header>
-    <main>
+    <main><!-- titulos, presentacion, fotos -->
         <section class="principal__nosotros">
             <article class="principal__titulo">
                 <h1>
@@ -80,13 +86,17 @@
             </article>
             <article class="principal__redes">
                 <a href="https://wa.me/5491136568958"><img src="../multimedia/Iconos/whasapp2.png" alt="Whatsapp" width="50" height="50"></a>
-                <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram" width="50" height="50"></a>
-                <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook" width="50" height="50"></a>
+                <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram" width="50" height="50" class="instagram"></a>
+                <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook" width="50" height="50" class="facebook"></a>
             </article>
         </section>        
     </main>
     <footer class="pie">
         <p class="pie__texto">2022 ManchArte Kits, Todos los derechos reservados</p>
+        <div class="pie__redes">
+        <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram" width="50" height="50" class="instagram_f"></a>
+        <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook" width="50" height="50" class="facebook_f"></a>
+        </div>
     </footer>
 </body>
 </html>

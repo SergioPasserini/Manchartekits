@@ -14,8 +14,14 @@
 </head>
 
 <body>
+    <!-- encabezado, menu, logo -->
     <header class="encabezado">
         <nav>
+            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <img src="../multimedia/Iconos/menu.svg" alt="" class="menuh">
+                <img src="../multimedia/Iconos/x.svg" class="cerrar" height="55px">
+            </label>
             <ul class="menu">
                 <li>
                     <a href="../index.html">Home</a>
@@ -49,7 +55,7 @@
             </a>
         </nav>
     </header>
-    <main>
+    <main><!-- titulos y formulario de conctacto -->
         <section class="principal">
             <article class="principal__titulo">
                 <h1>
@@ -68,38 +74,39 @@
                         <input type="text" placeholder="Indique su nuemro de celular" name="celular">
                     </div>
                     <div class="formulario__correo">
-                        <label for="correo"><p>Correo electronico</label>
-                        <input type="email" name="correo" placeholder="su@email.com">
+                        <label for="correo">Correo electronico</label>
+                        <input class="formulario__correo_input" type="email" name="correo" placeholder="su@email.com">
                     </div>
-                    <div class="formulario_cliente ">
+                    <div class="formulario__cliente">
                         <label for="client">¿Ya es cliente?</label>
                         <input type="radio" value="si" name="client">Si
                         <input type="radio" value="no" name="client">No
                     </div>
-                    <div class="formulario__conocimiento">
-                        <label for="conocimento"></label>¿Como nos conoció?
-                        <select name="conocimento" id="">
-                            <option value="Redes_soc">Redes sociales</option>
-                            <option value="diarios">Medios impresos </option>
-                            <option value="conocidos">Amigos</option>
-                            <option value="web">Nuesto sitio web</option>
-                        </select>
+                    <label class="formulario__conocimiento" for="conocimento"></label>¿Como nos conoció?
+                    <select name="conocimento" id="">
+                        <option value="Redes_soc">Redes sociales</option>
+                        <option value="diarios">Medios impresos </option>
+                        <option value="conocidos">Amigos</option>
+                        <option value="web">Nuesto sitio web</option>
+                    </select>
+                    <label class="formulario__comentario_label" for="comentario"></label>
+                    <textarea class="formulario__comentario_textarea" name="" id="" cols="30" rows="10"
+                        name="comentario">
+                    </textarea>
                     </div>
-                    <div class="formulario__comentario">
-                        <label for="comentario"></label>
-                        <textarea name="" id="" cols="30" rows="10" name="comentario">
-                        </textarea>
+                    <div class="formulario__promo">
+                        <label for="formulario__checkbox_mail">
+                            <input class="formulario__checkbox_mail" type="checkbox" name="formulario__checkbox_mail"
+                                value="E-mail">¿Desea recibir nuestras promociones via E-mail?
+                        </label>
+                        <label for="formulario__checkbox_wpp">
+                            <input class="formulario__checkbox_wpp" type="checkbox" name="formulario__checkbox_wpp"
+                                value="Wpp">¿Desea recibir nuestras promociones via Whatsapp?
+                        </label>
                     </div>
-                    <div class="formulario__checkbox">
-                        <label for="promociones"></label>
-                        <input type="checkbox" name="promociones" value="E-mail" class="formulario__checkbox__mail">¿Desea recibir nuestras promociones via
-                        E-mail?
-                        <input type="checkbox" name="promociones" value="Wpp" class="formulario__checkbox__wpp">¿Desea recibir nuestras promociones via
-                        Whatsapp?
-                    </div>
-                    <div class="formulario__botones">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                    <div>
+                        <input class="btn_enviar" type="submit" value="Enviar">
+                        <input class="btn_borrar" type="reset" value="Borrar">
                     </div>
                 </form>
             </article>
@@ -107,14 +114,20 @@
                 <a href="https://wa.me/5491136568958"><img src="../multimedia/Iconos/whasapp2.png" alt="Whatsapp"
                         width="50" height="50"></a>
                 <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram"
-                        width="50" height="50"></a>
+                        width="50" height="50" class="instagram"></a>
                 <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook"
-                        width="50" height="50"></a>
+                        width="50" height="50" class="facebook"></a>
             </article>
         </section>
     </main>
     <footer class="pie">
         <p class="pie__texto">2022 ManchArte Kits, Todos los derechos reservados</p>
+        <div class="pie__redes">
+            <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram"
+                    width="50" height="50" class="instagram_f"></a>
+            <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook"
+                    width="50" height="50" class="facebook_f"></a>
+        </div>
     </footer>
 </body>
 

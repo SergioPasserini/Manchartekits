@@ -10,11 +10,13 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 114px 2fr 0.1fr;
+    grid-template-rows: 0.9fr 7fr 0fr;
     grid-template-areas:
         "encabezado"
         "principal"
-        "pie"
+        "pie";
+    margin: auto;
+    
 }
 
 nav {
@@ -29,6 +31,7 @@ nav {
 .encabezado {
     background-image: url("../multimedia/Fondos/lluvia_textura.jpg");
     grid-area: encabezado;
+    overflow: visible;
 }
 
 .encabezado__logo {
@@ -40,6 +43,13 @@ nav {
     margin-right: 10px;
 }
 
+.nav__checkbox {
+    display: none;
+}
+
+.nav__toggle {
+    display: none;
+}
 
 .menu li {
     display: inline;
@@ -116,7 +126,9 @@ main {
     text-align: center;
     grid-area: titulo;
 }
-
+.principal__video{
+    padding-bottom: 20px;
+}
 
 .principal__tabla {
     background-image: url(../multimedia/Fondos/manchas.webp);
@@ -146,12 +158,11 @@ main {
 
 .principal__foto {
     display: inline-block;
-
+    grid-area: imagen1;
 }
 
 .principal__foto img {
     border-radius: 30px;
-    grid-area: imagen1;
 }
 
 .principal__presentacion {
@@ -197,43 +208,40 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
-.principal__catalogo article div a{
-    margin: 20px;
 
-}
-.principal__catalogo article div img{
-    margin: 20px;
-}
-.principal__productos h2{
+.principal__productos h2 {
     margin-top: 10px;
     margin-bottom: 30px;
     color: rgb(247, 234, 241);
     font-size: 30px;
     text-align: center;
 }
-/* .de_0_a_3 {
-    margin: 10px 0px 10px 110px;
-    padding: 5px 0px 5px 290px;
-    width: 900px;
-} */
+
 .box__titulo {
     font-size: 20px;
     color: rgb(247, 234, 241);
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 .box1 {
     display: inline-block;
     grid-area: box1;
 }
+
 .box__opcion {
     font-size: 15px;
     color: rgb(247, 234, 241);
     text-align: center;
 }
+
 .box1__img {
     border-radius: 30px;
 }
+
 .box1__pregunta a {
     display: none;
     font-size: 20px;
@@ -244,23 +252,28 @@ main {
     color: rgb(247, 234, 241);
     z-index: 50;
 }
+
 .box1:hover .box1__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
+
 .box__links a {
     font-size: 15px;
     color: rgb(247, 234, 241);
     text-decoration: none;
 }
+
 .box2 {
     display: inline-block;
     grid-area: box2;
 }
+
 .box2__img {
     border-radius: 30px;
 }
+
 .box2__pregunta a {
     display: none;
     font-size: 20px;
@@ -271,19 +284,12 @@ main {
     color: rgb(247, 234, 241);
     z-index: 50;
 }
+
 .box2:hover .box2__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
-/* .de_3_a_6 {
-    position: relative;
-    top: 100px;
-    left: 100px;
-    width: 970px;
-    margin: 10px 0px 10px 100px;
-    padding: 5px 0px 5px 0px;
-} */
 
 .box3 {
     display: inline-block;
@@ -310,12 +316,12 @@ main {
 .box3:hover .box3__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
 
 .box4 {
     display: inline-block;
-/*     position: relative;
+    /*     position: relative;
     left: 100px; */
 }
 
@@ -340,13 +346,11 @@ main {
 .box4:hover .box4__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
 
 .box5 {
     display: inline-block;
-/*     position: relative;
-    left: 200px; */
 }
 
 .box5__img {
@@ -371,17 +375,8 @@ main {
 .box5:hover .box5__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
-
-/* .mas_de_7 {
-    position: relative;
-    top: 100px;
-    left: 100px;
-    width: 970px;
-    margin: 30px 0px 10px 100px;
-    padding: 5px 0px 5px 0px;
-} */
 
 .box6 {
     display: inline-block;
@@ -408,13 +403,11 @@ main {
 .box6:hover .box6__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
 
 .box7 {
     display: inline-block;
-/*     position: relative;
-    left: 100px; */
 }
 
 .box7__img {
@@ -438,13 +431,11 @@ main {
 .box7:hover .box7__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
 
 .box8 {
     display: inline-block;
-/*     position: relative;
-    left: 200px; */
 }
 
 .box8__img {
@@ -468,25 +459,27 @@ main {
 .box8:hover .box8__pregunta a {
     display: inline;
     position: relative;
-    top: -161px;
+    top: -142px;
 }
 
 /* ------listas_hst3------ */
+.contenedor__Tablas {
+    display: flex;
+    align-items: center;
+}
+
 .categoria {
     text-align: center;
     font-size: 30px;
     color: rgb(247, 234, 241);
-    ;
 }
 
 .tabla1__titulo {
     color: rgb(247, 234, 241);
-    ;
     font-size: 25px;
-    position: relative;
-    top: 150px;
-    left: 310px;
-    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .tabla1__0a3 {
@@ -504,13 +497,11 @@ main {
 }
 
 .tabla2__titulo {
-    display: inline-block;
     color: rgb(247, 234, 241);
-    ;
     font-size: 25px;
-    position: relative;
-    top: 300px;
-    left: 310px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .tabla2__0a3 {
@@ -528,13 +519,6 @@ main {
 }
 
 /* -----Listas_hst6---------------- */
-.principal__lista_hst6 {
-    background-image: url("../multimedia/Fondos/Blackboard_texture.jpg");
-    background-size: contain;
-    overflow: hidden;
-    height: 1900px;
-}
-
 .tabla1__3a6 {
     color: black;
     background-image: url("../multimedia/Fondos/manchas.webp");
@@ -548,7 +532,6 @@ main {
 .tabla1__3a6 ul {
     list-style: none;
 }
-
 
 .tabla2__3a6 {
     color: black;
@@ -565,13 +548,11 @@ main {
 }
 
 .tabla3__titulo {
-    display: inline-block;
     color: rgb(247, 234, 241);
-    ;
     font-size: 25px;
-    position: relative;
-    top: 400px;
-    left: 310px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .tabla3__3a6 {
@@ -589,13 +570,6 @@ main {
 }
 
 /* --------------mas de 7---------------------- */
-.principal__lista_mas7 {
-    background-image: url("../multimedia/Fondos/Blackboard_texture.jpg");
-    background-size: contain;
-    overflow: hidden;
-    height: 1900px;
-}
-
 .tabla1__mas7 {
     color: black;
     background-image: url("../multimedia/Fondos/manchas.webp");
@@ -610,7 +584,6 @@ main {
     list-style: none;
 }
 
-
 .tabla2__mas7 {
     color: black;
     background-image: url("../multimedia/Fondos/manchas.webp");
@@ -623,16 +596,6 @@ main {
 
 .tabla2__mas7 ul {
     list-style: none;
-}
-
-.tabla3__titulo {
-    display: inline-block;
-    color: rgb(247, 234, 241);
-    ;
-    font-size: 25px;
-    position: relative;
-    top: 400px;
-    left: 310px;
 }
 
 .tabla3__mas7 {
@@ -652,18 +615,17 @@ main {
 /* ------------Baul---------- */
 .principal__baul {
     background-image: url("../multimedia/Fondos/Blackboard_texture.jpg");
-    background-size: contain;
     overflow: hidden;
-    height: 1300px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .baul__tabla {
     background-image: url("../multimedia/Fondos/papel.webp");
     background-repeat: repeat;
     font-size: 15px;
-    position: relative;
-    top: 20px;
-    left: 250px;
 }
 
 .baul__tabla li {
@@ -683,45 +645,44 @@ main {
 .contacto {
     display: inline-block;
     width: 400px;
-    height: 600px;
+    height: 450px;
     background-color: rgba(255, 127, 80, 0.418);
     padding: 15px;
     border-radius: 30px;
     margin: 50px;
     overflow: hidden;
-    position: relative;
-    left: 425px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
 }
 
 .contacto__titulo {
     text-align: center;
     font-size: 20px;
     color: rgb(247, 234, 241);
-    ;
-}
-
-.formulario {
-    display: inline;
-}
-
-.formulario div {
-    padding: 10px;
-}
-
-.formulario__comentario {
-    position: relative;
-    left: 50px;
+    grid-area: contacto;
 }
 
 .formulario__checkbox {
     font-size: 13px;
 }
 
+.formulario__promo {
+    font-size: 14px;
+}
+
+.btn_enviar {
+    grid-area: enviar;
+}
+
+.btn_borrar {
+    grid-area: borrar;
+}
+
 .formulario__botones input {
     display: inline;
-    position: relative;
-    top: 25px;
-    left: 100px;
     width: 100px;
     height: 40px;
 }
@@ -745,8 +706,11 @@ main {
 }
 
 .pie {
+    display: flex;
+    flex-direction: column;
     background-image: url("../multimedia/Fondos/lluvia_textura.jpg");
     grid-area: pie;
+    padding-bottom: 100px;
 }
 
 .pie p {
@@ -754,6 +718,616 @@ main {
     color: rgb(247, 234, 241);
     position: relative;
     top: 40%;
-    font-weight: bold;
     text-align: center;
+}
+
+.pie__redes {
+    display: none;
+}
+
+/* Tablet (responsive design) */
+@media screen and (max-width: 970px) {
+    body{
+        grid-template-rows: 0.9fr 4fr 0fr;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    .instagram {
+        display: none;
+    }
+
+    .facebook {
+        display: none;
+    }
+
+    .principal__redes {
+        top: 67%;
+    }
+
+    .submenu {
+        left: 256px;
+    }
+    .pie{
+        padding-bottom: 100px;
+    }
+    .pie__redes {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 657px;
+    }
+
+    .pie p {
+        top: 138px;
+        flex-direction: row-reverse;
+    }
+
+    /* Nosotros */
+    .principal__nosotros {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .principal__foto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .principal__presentacion {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .principal__trabajo {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .principal__gif img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* catalogo */
+    .box1 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box2 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box3 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box4 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box5 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box6 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box7 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box8 img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .box__titulo {
+        font-size: 15px;
+    }
+
+    .box1:hover .box1__pregunta a {
+        top: -70px;
+    }
+
+    .box1__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box2:hover .box2__pregunta a {
+        top: -70px;
+    }
+
+    .box2__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box3:hover .box3__pregunta a {
+        top: -70px;
+        right: 0;
+    }
+
+    .box3__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box4:hover .box4__pregunta a {
+        top: -70px;
+        right: 0;
+    }
+
+    .box4__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box5:hover .box5__pregunta a {
+        top: -70px;
+        right: 0;
+    }
+
+    .box5__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box6:hover .box6__pregunta a {
+        top: -70px;
+        right: 0;
+    }
+
+    .box6__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box7:hover .box7__pregunta a {
+        top: -70px;
+        right: 0;
+    }
+
+    .box7__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    .box8:hover .box8__pregunta a {
+        top: -70px;
+        right: 0;
+    }
+
+    .box8__pregunta a {
+        font-size: 11px;
+        padding: 49px 12px;
+    }
+
+    /* listas_hst3 */
+    .tabla1__titulo {
+        font-size: 15px;
+    }
+
+    .tabla1__0a3 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    .tabla2__titulo {
+        font-size: 15px;
+    }
+
+    .tabla2__0a3 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    /* lista_hst6 */
+    .tabla1__titulo {
+        font-size: 15px;
+    }
+
+    .tabla1__3a6 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    .tabla2__3a6 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    .tabla3__titulo {
+        font-size: 15px;
+    }
+
+    .tabla3__3a6 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    /* mas de 7 */
+    .tabla1__mas7 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    .tabla2__mas7 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+
+    .tabla3__mas7 {
+        margin: auto;
+        height: auto;
+        width: 617px;
+    }
+}
+
+/* mobile (responsive design) */
+@media screen and (max-width: 500px) {
+
+    body{
+        grid-template-rows: 0fr 1fr 0fr;
+    }
+    .encabezado {
+        height: 131px;;
+    }
+
+    .principal {
+        width: auto;
+    }
+
+    .pie {
+        width: auto;
+        font-size: 10px;
+        }
+
+    .pie__redes {
+        margin: auto;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+    .nav__toggle .cerrar,
+    .nav__toggle .menuh {
+        margin-top: 0, 3rem;
+    }
+
+    .nav__toggle .cerrar {
+        display: none;
+        position: absolute;
+    }
+
+    .nav__toggle {
+        display: block;
+        position: relative;
+        left: 32px;
+        cursor: pointer;
+        margin: 1rem;
+        background-color: rgba(255, 255, 255, 0.596);
+    }
+    .encabezado__logo img{
+        width: 200px;
+        height: 45px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 48%;
+    }
+       .menuh {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        margin: 1rem;
+        right: 100px;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .menu li:hover .submenu {
+        display: block;
+        position: fixed;
+        top: 15%;
+        left: 199px;
+    }
+
+    .submenu {
+        background-color: none;
+        border-radius: 10px;
+        padding-bottom: 2px;
+        position: absolute;
+        display: none;
+        left: 540px;
+        width: 133px;
+        height: 0;
+    }
+
+    #nav__checkbox:checked~ul.menu li {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    #nav__checkbox:checked~ul.menu li a {
+        line-height: 25px;
+    }
+    #nav__checkbox:checked~ul.menu li .submenu{
+        line-height: 25px;
+        position: absolute;
+        left: -81%;
+        top: 40%;
+    }
+    
+    #nav__checkbox:checked~label.nav__toggle .cerrar {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.596);
+        position: static;
+    }
+
+    #nav__checkbox:checked~label.nav__toggle .menuh {
+        display: none;
+    }
+    .menu li:hover .submenu {
+        display: block;
+
+    }
+
+    /* index */
+    .principal__video iframe {
+        width: 300px;
+        height: 300px;
+      }
+
+    .pie p {
+        width: auto;
+        flex-direction: row-reverse;
+        top: 78%;
+        font-size: 10px;
+    }
+
+    .pie__redes {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -12px;
+        background-color: rgba(0, 0, 0, 0.644);
+        border-radius: 30px;
+    }
+
+    .principal__redes {
+        top: 75%;
+        left:77%;
+        right: auto;
+    }
+
+    /* Nosotros */
+    .principal__nosotros {
+        grid-template-rows: 0fr 1fr 0fr 0.8fr 0fr 0.2fr;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "texto1 texto1 texto1"
+            "imagen1 imagen1 imagen1"
+            "texto2 texto2 texto2"
+            "imagen2 imagen2 imagen2"
+            "texto3 texto3 texto3";
+        align-items: normal;
+    }
+
+    .principal__foto img {
+        width: 322px;
+        height: 300px;
+    }
+
+    .principal__gif img {
+        width: 322px;
+        height: 300px;
+    }
+
+    .principal__presentacion {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .principal__trabajo {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    /* Catalogo */
+    .de_0_a_3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .de_3_a_6 {
+        display: flex;
+        flex-direction: column;
+    }
+    .mas_de_7 {
+        display: flex;
+        flex-direction: column;
+    }
+    .de_0_a_3 img {
+        width: 200px;
+        height: 200px;    
+    }
+    .de_3_a_6 img {
+        width: 200px;
+        height: 200px;    
+    }
+    .mas_de_7 img {
+        width: 200px;
+        height: 200px;
+    }
+    .box1:hover .box1__pregunta a {
+        top: -119px;
+    }
+    .box1__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box2:hover .box2__pregunta a {
+        top: -119px;
+    }
+    .box2__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box3:hover .box3__pregunta a {
+        top: -119px;
+    }
+    .box3__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box4:hover .box4__pregunta a {
+        top: -119px;
+    }
+    .box4__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box5:hover .box5__pregunta a {
+        top: -119px;
+    }
+    .box5__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box6:hover .box6__pregunta a {
+        top: -119px;
+    }
+    .box6__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box7:hover .box7__pregunta a {
+        top: -119px;
+    }
+    .box7__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    .box8:hover .box8__pregunta a {
+        top: -119px;
+    }
+    .box8__pregunta a {
+        font-size: 24px;
+        padding: 85px 6px;
+    }
+    /* listas_hst3 */
+    .tabla1__titulo {
+        font-size: 15px;
+    }
+
+    .tabla1__0a3 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    .tabla2__titulo {
+        font-size: 15px;
+    }
+
+    .tabla2__0a3 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    /* lista_hst6 */
+    .tabla1__titulo {
+        font-size: 15px;
+    }
+
+    .tabla1__3a6 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    .tabla2__3a6 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    .tabla3__titulo {
+        font-size: 15px;
+    }
+
+    .tabla3__3a6 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    /* mas de 7 */
+    .tabla1__mas7 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    .tabla2__mas7 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+
+    .tabla3__mas7 {
+        margin: auto;
+        height: auto;
+        width: 347px;
+    }
+    /*baul */
+    .baul__tabla{
+        width: 277px;
+        font-size: 10px;
+    }
+    /* Contacto */
+    .contacto{
+        width: 278px;
+        padding: 2px;
+        font-size: 11px;
+    }
+    .formulario__promo{
+        font-size: 11px
+        
+    }
+    .formulario__promo label {
+        display: block;
+    }
+    .formulario__nombre input {
+        width: 216px;
+    }
+    .formulario__celular input {
+        width: 154px;
+    }
+    .formulario__correo input{
+            width: 155px;
+    }
+
 }
