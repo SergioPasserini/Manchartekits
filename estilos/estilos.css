@@ -41,6 +41,8 @@ nav {
 .encabezado__logo img {
     border-radius: 10px;
     margin-right: 10px;
+    animation-name:rotateInDownLeft ;
+    animation-duration: 1s;
 }
 
 .nav__checkbox {
@@ -53,6 +55,10 @@ nav {
 
 .menu li {
     display: inline;
+}
+.home:hover{
+    animation-name:heartBeat ;
+    animation-duration: 5s;
 }
 
 .menu li:hover .submenu {
@@ -69,6 +75,7 @@ nav {
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.836);
     border-radius: 10px;
+
 }
 
 .submenu {
@@ -246,7 +253,7 @@ main {
     display: none;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -278,7 +285,7 @@ main {
     display: none;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -304,7 +311,8 @@ main {
     position: relative;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+   /*  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781)); */
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -334,7 +342,7 @@ main {
     position: relative;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -362,7 +370,7 @@ main {
     position: relative;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -391,7 +399,7 @@ main {
     position: relative;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -419,7 +427,7 @@ main {
     position: relative;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
@@ -447,7 +455,7 @@ main {
     position: relative;
     font-size: 20px;
     padding: 113px 48px;
-    background-color: rgba(128, 128, 128, 0.685);
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.836) , rgba(109, 109, 105, 0.781));
     background-size: cover;
     border-radius: 30px;
     color: rgb(247, 234, 241);
