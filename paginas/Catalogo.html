@@ -8,153 +8,159 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-    <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Catalogo</title>
     <link rel="shortcut icon" href="../multimedia/Iconos/color.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
-    <!-- encabezado, menu, logo -->
-    <header class="encabezado">
-        <nav>
-            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
-            <label for="nav__checkbox" class="nav__toggle">
-                <img src="../multimedia/Iconos/menu.svg" alt=""class="menuh">
-                <img src="../multimedia/Iconos/x.svg" class="cerrar" height="55px">
-            </label> 
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="Catalogo.html">Catalogo</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="#1">De 0 a 3 años</a>
-                        </li>
-                        <li>
-                            <a href="#2">De 3 a 6 años</a>
-                        </li>
-                        <li>
-                            <a href="#3">Más de 7 años</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="Baul.html">Baul de ideas</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <a href="../index.html" class="encabezado__logo">
-                <img src="../multimedia/Logos/Mancharte.jpg" width="290" height="50">
-            </a>
-        </nav>
-    </header>
-    <main><!-- fotos productos -->
-        <section class="principal__catalogo">
-            <article class="principal__titulo">
-                <h1>
-                    Creando infancias felices
-                </h1>
-            </article>
-            <article class="principal__productos">
-                <h2>Estos son nuestros productos</h2>
-            </article>
-            <article class="de_0_a_3" id="1">
-                <h4 class="box__titulo">
-                    De 0 a 3 años
-                </h4>
-                <div class="box1">
-                    <h6 id="103" class="box__opcion">Opción 1</h6>
-                    <img src="../multimedia/Productos/0a11.jpg" alt="caja de 0 a 3" width="250" height="250"
-                        class="box1__img">
-                    <div class="box1__pregunta">
-                        <a href="listas_hst3.html#1">¿Que contiene?</a>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+        <header class="encabezado">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark encabezado">
+                <div class="container-fluid">
+                    <a class="navbar-brand encabezado__logo" href="../index.html">
+                        <img src="../multimedia/Logos/Mancharte.jpg" width="290" height="50">
+                    </a>
+                    <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
+                            </li>
+                            <a class="nav-link active dropdown-toggle "  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalogo
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../paginas/Catalogo.html#1">De 0 a 3 años</a></li>
+                                    <li><a class="dropdown-item" href="../paginas/Catalogo.html#2">De 3 a 6 años</a></li>
+                                    <li><a class="dropdown-item" href="../paginas/Catalogo.html#3">Más de 7 años</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/paginas/Baul.html">Baul de ideas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/paginas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box2">
-                    <h6 id="203" class="box__opcion">Opción 2</h6>
-                    <img src="../multimedia/Productos/0a12.jpg" alt="caja de 0 a 3 (2)" width="250" height="250"
-                        class="box2__img">
-                    <div class="box2__pregunta">
-                        <a href="listas_hst3.html#2">¿Que contiene?</a>
+            </nav>
+        </header>
+    <main>
+        <div class="principal__catalogo">
+            <section class="container todas__cajas">
+                <article class="principal__titulo row">
+                    <h1 class="h1 col -12">
+                        Creando infancias felices
+                    </h1>
+                </article>
+                <article class="principal__productos row">
+                    <h2 class="h2 col-12">Estos son nuestros productos</h2>
+                </article>
+                <article class="de_0_a_3 row" id="1">
+                    <h4 class="box__titulo col-12 h4">
+                        De 0 a 3 años
+                    </h4>
+                    <div class="box1 col">
+                        <h6 id="103" class="box__opcion ">Opción 1</h6>
+                        <img src="../multimedia/Productos/0a11.jpg" alt="caja de 0 a 3" width="250" height="250"
+                            class="box1__img">
+                        <div class="box1__pregunta">
+                            <a href="listas_hst3.html#1">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-
-            </article>
-            <article class="de_3_a_6" id="2">
-                <h4 class="box__titulo">
-                    <p>De 3 a 6 años</p>
-                </h4>
-                <div class="box3">
-                    <h6 id="136" class="box__opcion">Opción 1</h6>
-                    <img src="../multimedia/Productos/3a61.jpg" alt="caja de 3 a 6 años" width="250" height="250"
-                        class="box3__img">
-                    <div class="box3__pregunta">
-                        <a href="listas_hst6.html#1">¿Que contiene?</a>
+                    <div class="box2 col">
+                        <h6 id="203" class="box__opcion">Opción 2</h6>
+                        <img src="../multimedia/Productos/0a12.jpg" alt="caja de 0 a 3 (2)" width="250" height="250"
+                            class="box2__img">
+                        <div class="box2__pregunta">
+                            <a href="listas_hst3.html#2">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box4">
-                    <h6 id="236" class="box__opcion">Opción 2</h6>
-                    <img src="../multimedia/Productos/3a62.jpg" alt="caja de 3 a 6 años(2)" width="250" height="250"
-                        class="box4__img">
-                    <div class="box4__pregunta">
-                        <a href="listas_hst6.html#2">¿Que contiene?</a>
+                </article>
+                <article class="de_3_a_6 row" id="2">
+                    <h4 class="box__titulo h4 col-12">
+                        <p>De 3 a 6 años</p>
+                    </h4>
+                    <div class="box3 col">
+                        <h6 id="136" class="box__opcion">Opción 1</h6>
+                        <img src="../multimedia/Productos/3a61.jpg" alt="caja de 3 a 6 años" width="250" height="250"
+                            class="box3__img">
+                        <div class="box3__pregunta">
+                            <a href="listas_hst6.html#1">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box5">
-                    <h6 id="336" class="box__opcion">Opción 3</h6>
-                    <img src="../multimedia/Productos/3a63.jpg" alt="caja de 3 a 6 años (3)" width="250" height="250"
-                        class="box5__img">
-                    <div class="box5__pregunta">
-                        <a href="listas_hst6.html#3">¿Que contiene?</a>
+                    <div class="box4 col">
+                        <h6 id="236" class="box__opcion">Opción 2</h6>
+                        <img src="../multimedia/Productos/3a62.jpg" alt="caja de 3 a 6 años(2)" width="250" height="250"
+                            class="box4__img">
+                        <div class="box4__pregunta">
+                            <a href="listas_hst6.html#2">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="mas_de_7" id="3">
-                <h4 class="box__titulo">
-                    <p>De 7 en adelante</p>
-                </h4>
-                <div class="box6">
-                    <h6 id="17" class="box__opcion">Opción 1</h6>
-                    <img src="../multimedia/Productos/71.jpg" alt="caja mas de 7" width="250" height="250"
-                        class="box6__img">
-                    <div class="box6__pregunta">
-                        <a href="listas_mas7.html#1">¿Que contiene?</a>
+                    <div class="box5 col">
+                        <h6 id="336" class="box__opcion">Opción 3</h6>
+                        <img src="../multimedia/Productos/3a63.jpg" alt="caja de 3 a 6 años (3)" width="250"
+                            height="250" class="box5__img">
+                        <div class="box5__pregunta">
+                            <a href="listas_hst6.html#3">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box7">
-                    <h6 id="27" class="box__opcion">Opción 2</h6>
-                    <img src="../multimedia/Productos/72.jpg" alt="caja mas de 7 (2)" width="250" height="250"
-                        class="box7__img">
-                    <div class="box7__pregunta">
-                        <a href="listas_mas7.html#2">¿Que contiene?</a>
+                </article>
+                <article class="mas_de_7 row " id="3">
+                    <h4 class="box__titulo col-12">
+                        <p>De 7 en adelante</p>
+                    </h4>
+                    <div class="box6 col">
+                        <h6 id="17" class="box__opcion">Opción 1</h6>
+                        <img src="../multimedia/Productos/71.jpg" alt="caja mas de 7" width="250" height="250"
+                            class="box6__img">
+                        <div class="box6__pregunta">
+                            <a href="listas_mas7.html#1">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box8">
-                    <h6 id="37" class="box__opcion">Opción 3</h6>
-                    <img src="../multimedia/Productos/FULL.png" alt="caja mas de 7 (3)" width="250" height="250"
-                        class="box8__img">
-                    <div class="box8__pregunta">
-                        <a href="listas_mas7.html#3">¿Que contiene?</a>
+                    <div class="box7 col">
+                        <h6 id="27" class="box__opcion">Opción 2</h6>
+                        <img src="../multimedia/Productos/72.jpg" alt="caja mas de 7 (2)" width="250" height="250"
+                            class="box7__img">
+                        <div class="box7__pregunta">
+                            <a href="listas_mas7.html#2">¿Que contiene?</a>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="principal__redes">
-                <a href="https://wa.me/5491136568958"><img src="../multimedia/Iconos/whasapp2.png" alt="Whatsapp"
-                        width="50" height="50"></a>
-                <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png" alt="Instagram"
-                        width="50" height="50" class="instagram"></a>
-                <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook"
-                        width="50" height="50" class="facebook"></a>
-            </article>
-        </section>
+                    <div class="box8 col">
+                        <h6 id="37" class="box__opcion">Opción 3</h6>
+                        <img src="../multimedia/productos/FULL.png" alt="caja mas de 7 (3)" width="250" height="250"
+                            class="box8__img">
+                        <div class="box8__pregunta">
+                            <a href="listas_mas7.html#3">¿Que contiene?</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="principal__redes">
+                    <a href="https://wa.me/5491136568958"><img src="../multimedia/Iconos/whasapp2.png" alt="Whatsapp"
+                            width="50" height="50"></a>
+                    <a href="https://instagram.com/manchartekits"><img src="../multimedia/Iconos/inst.png"
+                            alt="Instagram" width="50" height="50" class="instagram"></a>
+                    <a href="https://facebook.com/ManchArtekits"><img src="../multimedia/Iconos/face.png" alt="Facebook"
+                            width="50" height="50" class="facebook"></a>
+                </article>
+            </section>
+        </div>
     </main>
     <footer class="pie">
         <p class="pie__texto">2022 ManchArte Kits, Todos los derechos reservados</p>
@@ -165,6 +171,12 @@
                     width="50" height="50" class="facebook_f"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
