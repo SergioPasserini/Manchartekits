@@ -16,52 +16,49 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
-        <header class="encabezado">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark encabezado">
-                <div class="container-fluid">
-                    <a class="navbar-brand encabezado__logo" href="../index.html">
-                        <img src="../multimedia/Logos/Mancharte.jpg" width="290" height="50">
-                    </a>
-                    <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
-                            </li>
-                            <a class="nav-link active dropdown-toggle "  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <header><!-- menu navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark encabezado">
+            <div class="container-fluid">
+                <a class="navbar-brand encabezado__logo" href="../index.html">
+                    <img src="../multimedia/Logos/Mancharte.jpg" width="290" height="50">
+                </a>
+                <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle " href="Catalogo.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Catalogo
                             </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="../paginas/Catalogo.html#1">De 0 a 3 años</a></li>
-                                    <li><a class="dropdown-item" href="../paginas/Catalogo.html#2">De 3 a 6 años</a></li>
-                                    <li><a class="dropdown-item" href="../paginas/Catalogo.html#3">Más de 7 años</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/paginas/Baul.html">Baul de ideas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/paginas/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#1">De 0 a 3 años</a></li>
+                                <li><a class="dropdown-item" href="#2">De 3 a 6 años</a></li>
+                                <li><a class="dropdown-item" href="#3">Más de 7 años</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Baul.html">Baul de ideas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
     <main>
+        <!-- listas y fotos -->
         <div class="principal__catalogo">
             <section class="container todas__cajas">
                 <article class="principal__titulo row">
@@ -76,49 +73,308 @@
                     <h4 class="box__titulo col-12 h4">
                         De 0 a 3 años
                     </h4>
-                    <div class="box1 col">
+                    <div class="box col">
                         <h6 id="103" class="box__opcion ">Opción 1</h6>
-                        <img src="../multimedia/Productos/0a11.jpg" alt="caja de 0 a 3" width="250" height="250"
-                            class="box1__img">
-                        <div class="box1__pregunta">
-                            <a href="listas_hst3.html#1">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/0a11.jpg" alt="caja de 0 a 3" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Opción 1</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla1__0a3">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="box2 col">
+                    <div class="box col">
                         <h6 id="203" class="box__opcion">Opción 2</h6>
-                        <img src="../multimedia/Productos/0a12.jpg" alt="caja de 0 a 3 (2)" width="250" height="250"
-                            class="box2__img">
-                        <div class="box2__pregunta">
-                            <a href="listas_hst3.html#2">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/0a12.jpg" alt="caja de 0 a 3 (2)" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Opción 2</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla2__0a3">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
                 </article>
                 <article class="de_3_a_6 row" id="2">
                     <h4 class="box__titulo h4 col-12">
                         <p>De 3 a 6 años</p>
                     </h4>
-                    <div class="box3 col">
+                    <div class="box col">
                         <h6 id="136" class="box__opcion">Opción 1</h6>
-                        <img src="../multimedia/Productos/3a61.jpg" alt="caja de 3 a 6 años" width="250" height="250"
-                            class="box3__img">
-                        <div class="box3__pregunta">
-                            <a href="listas_hst6.html#1">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/3a61.jpg" alt="caja de 3 a 6 años" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel box__opcion ">Opción 1</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla1__3a6 col-12">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="box4 col">
+                    <div class="box col">
                         <h6 id="236" class="box__opcion">Opción 2</h6>
-                        <img src="../multimedia/Productos/3a62.jpg" alt="caja de 3 a 6 años(2)" width="250" height="250"
-                            class="box4__img">
-                        <div class="box4__pregunta">
-                            <a href="listas_hst6.html#2">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/3a62.jpg" alt="caja de 3 a 6 años (2)" width="250"
+                                height="250" class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Opción 2</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla2__3a6 col-12">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="box5 col">
+                    <div class="box col">
                         <h6 id="336" class="box__opcion">Opción 3</h6>
-                        <img src="../multimedia/Productos/3a63.jpg" alt="caja de 3 a 6 años (3)" width="250"
-                            height="250" class="box5__img">
-                        <div class="box5__pregunta">
-                            <a href="listas_hst6.html#3">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/3a63.jpg" alt="caja de 3 a 6 años" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Opción 3</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla3__3a6 col-12">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -126,28 +382,184 @@
                     <h4 class="box__titulo col-12">
                         <p>De 7 en adelante</p>
                     </h4>
-                    <div class="box6 col">
+                    <div class="box col">
                         <h6 id="17" class="box__opcion">Opción 1</h6>
-                        <img src="../multimedia/Productos/71.jpg" alt="caja mas de 7" width="250" height="250"
-                            class="box6__img">
-                        <div class="box6__pregunta">
-                            <a href="listas_mas7.html#1">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight6" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/71.jpg" alt="caja mas de 7" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Opción 1</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla1__mas7 col-12">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                                <li> 10 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                                <li> Lapices </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="box7 col">
+                    <div class="box col">
                         <h6 id="27" class="box__opcion">Opción 2</h6>
-                        <img src="../multimedia/Productos/72.jpg" alt="caja mas de 7 (2)" width="250" height="250"
-                            class="box7__img">
-                        <div class="box7__pregunta">
-                            <a href="listas_mas7.html#2">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight7" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/72.jpg" alt="caja mas_de_7(2)" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight7"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Opción 2</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla2__mas7">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="box8 col">
+                    <div class="box col">
                         <h6 id="37" class="box__opcion">Opción 3</h6>
-                        <img src="../multimedia/productos/FULL.png" alt="caja mas de 7 (3)" width="250" height="250"
-                            class="box8__img">
-                        <div class="box8__pregunta">
-                            <a href="listas_mas7.html#3">¿Que contiene?</a>
+                        <button class="btn-dark box__img" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight8" aria-controls="offcanvasRight"><img
+                                src="../multimedia/Productos/FULL.png" alt="caja mas_de_7(3)" width="250" height="250"
+                                class="box__img"> </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight8"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel ">Opción 3</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <table border="5" class="tabla3__mas7">
+                                    <th>Cantidad</th>
+                                    <th>Articulo</th>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li> 2 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                                <li> 1 </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                                <li> Reglas</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </article>
