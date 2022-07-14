@@ -1,0 +1,35 @@
+.principal__presentacion {
+	color: rgb(247, 234, 241);
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.principal__foto {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	img {
+		border-radius: 30px;
+	}
+}
+.principal__trabajo {
+	display: inline-block;
+	color: rgb(247, 234, 241);
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.principal__fin {
+	display: inline-block;
+	color: rgb(247, 234, 241);
+	font-size: 30px;
+	text-align: center;
+}
+.principal__gif {
+	border-radius: 30px;
+	display: inline-block;
+	img {
+		border-radius: 30px;
+	}
+}
