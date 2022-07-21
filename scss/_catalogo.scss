@@ -2,23 +2,24 @@
 	h2 {
 		margin-top: 10px;
 		margin-bottom: 30px;
-		color: rgb(247, 234, 241);
 		font-size: 30px;
 		text-align: center;
 	}
 }
+
 .todas__cajas {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 .box__titulo {
 	font-size: 20px;
-	color: rgb(247, 234, 241);
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 .box {
 	display: flex;
 	flex-direction: column;
@@ -26,138 +27,96 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .box__opcion {
 	font-size: 15px;
-	color: rgb(247, 234, 241);
 	text-align: center;
 	margin-left: 6%;
 }
+
 .box__img {
 	border-radius: 30px;
 }
+
 .contenedor__Tablas {
 	display: flex;
 	align-items: center;
 }
+
 .categoria {
 	text-align: center;
 	font-size: 30px;
-	color: rgb(247, 234, 241);
 }
+
 .tabla1__titulo {
-	color: rgb(247, 234, 241);
 	font-size: 25px;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
+
+.tablas {
+	color: black;
+	background-size: cover;
+	font-size: 15px;
+	@include tamano(100%,100%);
+	ul {
+		list-style: none;
+	}
+}
+
 .tabla1__0a3 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla2__titulo {
-	color: rgb(247, 234, 241);
-	font-size: 25px;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 10px;
+	@extend .tabla1__titulo;
 }
+
 .tabla2__0a3 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla1__3a6 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla2__3a6 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla3__titulo {
-	color: rgb(247, 234, 241);
-	font-size: 25px;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 10px;
+	@extend .tabla1__titulo;
 }
+
 .tabla3__3a6 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla1__mas7 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla2__mas7 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }
+
 .tabla3__mas7 {
-	color: black;
+	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	background-size: cover;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	ul {
-		list-style: none;
-	}
+	
 }

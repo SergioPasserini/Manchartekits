@@ -2,8 +2,8 @@
 	background-image: url("../multimedia/Fondos/papel.webp");
 	background-repeat: repeat;
 	font-size: 15px;
-	width: 100%;
-	height: 100%;
+	@include tamano(100%,100%);
+
 	li {
 		font-weight: bold;
 	}

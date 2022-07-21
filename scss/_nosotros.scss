@@ -3,6 +3,9 @@
 	font-size: 15px;
 	text-align: center;
 	line-height: 30px;
+	p{
+		color:#580158;
+	}
 }
 .principal__foto {
 	display: flex;
@@ -11,6 +14,7 @@
 	justify-content: flex-start;
 	img {
 		border-radius: 30px;
+		height: 58%;
 	}
 }
 .principal__trabajo {
@@ -19,12 +23,18 @@
 	font-size: 15px;
 	text-align: center;
 	line-height: 30px;
+	p{
+		color:#580158;
+	}
 }
 .principal__fin {
 	display: inline-block;
 	color: rgb(247, 234, 241);
 	font-size: 30px;
 	text-align: center;
+	p{
+		color:#580158;
+	}
 }
 .principal__gif {
 	border-radius: 30px;
