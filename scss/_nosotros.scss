@@ -7,15 +7,19 @@
 		color:#580158;
 	}
 }
-.principal__foto {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	img {
-		border-radius: 30px;
-		height: 58%;
-	}
+.parallax {
+	background-image: url("../multimedia/Nosotros/jesi.jpg");
+	min-height: 30%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+.cubo {
+	height: 500px;
+	border-radius: 30px;
+	margin-bottom: 5%;
 }
 .principal__trabajo {
 	display: inline-block;
@@ -38,7 +42,9 @@
 }
 .principal__gif {
 	border-radius: 30px;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	padding: 5%;
 	img {
 		border-radius: 30px;
 	}

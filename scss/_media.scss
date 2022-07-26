@@ -3,31 +3,45 @@
 		width: 10%;
 		margin-left: 10%;
 	}
+	.fotos{
+		@include tamano(700px,100%);
+	}
+	.contacto {
+		width: 95%!important;
+	}
 }
+
 @media screen and (max-width: 500px) {
 	.instagram {
 		display: none;
 	}
+
 	.facebook {
 		display: none;
 	}
-	.pie__redes {
-		display: flex;
-		flex-direction: row;
-		background-color: rgba(0, 0, 0, 0.774);
-		border-radius: 30px;
-		justify-content: center;
-	}
-	.principal__foto {
-		img{
-		align-content: center;
-		@include tamano(111%,88%);
+
+	footer {
+		.pie__redes {
+			display: flex;
+			flex-direction: row;
+			background-color: rgba(0, 0, 0, 0.774);
+			border-radius: 30px;
+			justify-content: center;
 		}
 	}
+	.principal__foto {
+		img {
+			display: none
+		}
+	}
+
 	.principal__gif {
 		img {
 			border-radius: 30px;
 			width: 106%;
 		}
+	}
+	.fotos{
+		@include tamano(400px,100%);
 	}
 }

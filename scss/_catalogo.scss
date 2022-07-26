@@ -59,16 +59,27 @@
 	color: black;
 	background-size: cover;
 	font-size: 15px;
-	@include tamano(100%,100%);
-	ul {
-		list-style: none;
+	@include tamano(100%, 100%);
+
+	tr {
+		background-color: rgba(220, 108, 235, 0.753);
+		display: flex;
+		justify-content: space-evenly;
+
+		td {
+			ul {
+				list-style: none;
+				padding-left: 0;
+			}
+		}
 	}
 }
 
 .tabla1__0a3 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
+
 }
 
 .tabla2__titulo {
@@ -78,19 +89,19 @@
 .tabla2__0a3 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
 
 .tabla1__3a6 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
 
 .tabla2__3a6 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
 
 .tabla3__titulo {
@@ -100,23 +111,23 @@
 .tabla3__3a6 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
 
 .tabla1__mas7 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
 
 .tabla2__mas7 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
 
 .tabla3__mas7 {
 	@extend .tablas;
 	background-image: url("../multimedia/Fondos/manchas.webp");
-	
+
 }
