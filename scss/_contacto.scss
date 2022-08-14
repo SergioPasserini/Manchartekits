@@ -1,17 +1,72 @@
 form {
 	justify-content: center;
+
 	.contacto {
-		background-image: linear-gradient(rgba(236, 35, 78, 0.575), rgba(98, 0, 128, 0.616));
+		background-image: url(../multimedia/Fondos/QmNN.gif);
+		background-position: bottom;
 		padding: 5%;
 		border-radius: 30px;
 		overflow: hidden;
-		color: antiquewhite;
+		color: #fcff2b;
+		text-shadow: 0px -1px 10px black;
 		width: 56%;
 
-		.btn {
-			background-image: linear-gradient(45deg, map-get($botonera, colores));
-			border-color: map-get($botonera, nada);
-			font-size: map-get($botonera, mediano);
+		.botones {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+
+			.btn {
+				background-image: url(../multimedia/Fondos/naranja.png);
+				border-color: map-get($botonera, nada);
+				font-size: map-get($botonera, mediano);
+				text-shadow: -5px 6px 4px black;
+				background-size: 90%;
+				background-repeat: no-repeat;
+				background-position: top;
+				padding: 7%;
+				box-shadow: none;
+				color: floralwhite;
+			}
+
+			.btn:active {
+				background-image: url(../multimedia/Fondos/lila.png);
+			}
 		}
 	}
+}
+
+.form-check-input {
+	background-color: rgba(22, 22, 22, 0.2);
+}
+
+.form-check-input:checked {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.form-control {
+	background-color: rgba(0, 0, 0, 0.199);
+	color: #fcff2b;
+}
+
+.form-control:focus {
+	color: #fcff2b;
+	background-color: #13031833;
+	border-color: #461e9336;
+}
+
+.form-select {
+	color: #fcff2b;
+	background-color: rgba(0, 0, 0, 0.199);
+	text-shadow: 1px 1px 4px black;
+
+	option {
+		color: #fcff2b;
+		background-color: #892be2c7;
+		text-shadow: 1px 1px 4px black;
+	}
+}
+
+.form-select:focus {
+	border-color: #350f4066;
 }

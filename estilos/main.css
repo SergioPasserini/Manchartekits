@@ -1,4 +1,4 @@
-.principal__productos h2 {
+.principal__productos h2, .principal__productos h3, .principal__productos h4, .principal__productos h6 {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 30px;
@@ -98,16 +98,34 @@
   display: flex;
   flex-direction: column; }
 
-.btn-primary {
-  background-image: linear-gradient(45deg, red, orange, green, cyan, blue, violet, red);
+.card-body .btn-primary {
+  background-image: url(../multimedia/Fondos/naranja.png);
   border-color: transparent;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-shadow: -5px 6px 4px black;
+  background-size: 61%;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 17%;
+  box-shadow: none;
+  color: floralwhite;
+  background-color: transparent;
+  border-color: transparent; }
+
+.card-body .btn-primary:active {
+  background-image: url(../multimedia/Fondos/lila.png);
+  background-color: transparent;
+  border-color: transparent;
+  color: floralwhite;
+  box-shadow: none; }
 
 .principal__titulo2 {
-  color: #580158;
   font-size: 25px;
   text-align: center;
-  padding: 4%; }
+  padding: 4%;
+  color: black;
+  text-align: center;
+  text-shadow: 4px 1px 20px #000000; }
 
 .principal__video {
   padding-bottom: 4%;
@@ -124,42 +142,93 @@
 
 .principal__presentacion {
   color: #f7eaf1;
-  font-size: 15px;
-  text-align: center;
-  line-height: 30px; }
-  .principal__presentacion p {
-    color: #580158; }
+  font-size: 15px; }
+  .principal__presentacion div .naranja, .principal__presentacion div .azul, .principal__presentacion div .rosa {
+    background-image: url(../multimedia/Fondos/naranja.png);
+    padding: 23%;
+    background-repeat: no-repeat;
+    background-size: 57%;
+    background-position: center; }
+    .principal__presentacion div .naranja p, .principal__presentacion div .azul p, .principal__presentacion div .rosa p {
+      color: #6df5cf;
+      font-size: 200%;
+      position: relative;
+      left: 4%;
+      text-align: center;
+      text-shadow: 0px 2px 2px black; }
+  .principal__presentacion div .azul {
+    background-image: url(../multimedia/Fondos/azul.png);
+    padding: 30%;
+    background-size: 70%; }
+    .principal__presentacion div .azul p {
+      color: #ff5959;
+      left: 2%; }
+  .principal__presentacion div .rosa {
+    background-image: url(../multimedia/Fondos/rosa.png);
+    padding: 27%;
+    background-size: 80%; }
+    .principal__presentacion div .rosa p {
+      color: #00ff66;
+      left: 10%; }
 
 .parallax {
-  background-image: url("../multimedia/Nosotros/jesi.jpg");
+  background-image: url("../multimedia/Nosotros/nina.jpg");
   min-height: 30%;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  height: 50%;
+  padding: 5%; }
+  .parallax p {
+    line-height: 40px;
+    background-color: #f0f8ff5e; }
 
-.cubo {
-  height: 250px;
-  border-radius: 30px;
-  margin-bottom: 5%; }
+.principal__trabajo div .verde, .principal__trabajo div .amarillo, .principal__trabajo div .azyros, .principal__trabajo div .rojo {
+  padding: 23%;
+  background-repeat: no-repeat;
+  background-size: 57%;
+  background-position: center;
+  background-image: url(../multimedia/Fondos/verde.png);
+  background-size: 72%; }
+  .principal__trabajo div .verde p, .principal__trabajo div .amarillo p, .principal__trabajo div .azyros p, .principal__trabajo div .rojo p {
+    color: #d93333;
+    font-size: 200%;
+    position: relative;
+    left: 4%;
+    text-align: center;
+    text-shadow: 0px 2px 2px black; }
 
-.principal__trabajo {
-  display: inline-block;
-  color: #f7eaf1;
-  font-size: 15px;
-  text-align: center;
-  line-height: 30px; }
-  .principal__trabajo p {
-    color: #580158; }
+.principal__trabajo div .amarillo {
+  background-image: url(../multimedia/Fondos/amarillo.png);
+  background-size: 67%; }
+  .principal__trabajo div .amarillo p {
+    color: #6200ff;
+    left: 11%; }
+
+.principal__trabajo div .azyros {
+  background-image: url(../multimedia/Fondos/azyros.png); }
+  .principal__trabajo div .azyros p {
+    color: #efff00;
+    font-size: 167%;
+    line-height: 50px;
+    left: 7%; }
+
+.principal__trabajo div .rojo {
+  background-image: url(../multimedia/Fondos/rojo.png); }
+  .principal__trabajo div .rojo p {
+    color: #b4ff00;
+    line-height: 50px;
+    left: 7%; }
 
 .principal__fin {
   display: inline-block;
-  color: #f7eaf1;
   font-size: 30px;
   text-align: center; }
   .principal__fin p {
-    color: #580158; }
+    color: black;
+    text-align: center;
+    text-shadow: 4px 1px 20px #000000; }
 
 .principal__gif {
   border-radius: 30px;
@@ -167,21 +236,64 @@
   justify-content: center;
   padding: 5%; }
   .principal__gif img {
-    border-radius: 30px; }
+    border-radius: 30px;
+    margin-top: 94px; }
 
 form {
   justify-content: center; }
   form .contacto {
-    background-image: linear-gradient(rgba(236, 35, 78, 0.575), rgba(98, 0, 128, 0.616));
+    background-image: url(../multimedia/Fondos/QmNN.gif);
+    background-position: bottom;
     padding: 5%;
     border-radius: 30px;
     overflow: hidden;
-    color: antiquewhite;
+    color: #fcff2b;
+    text-shadow: 0px -1px 10px black;
     width: 56%; }
-    form .contacto .btn {
-      background-image: linear-gradient(45deg, red, orange, green, cyan, blue, violet, red);
-      border-color: transparent;
-      font-size: 1.5rem; }
+    form .contacto .botones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      form .contacto .botones .btn {
+        background-image: url(../multimedia/Fondos/naranja.png);
+        border-color: transparent;
+        font-size: 1.5rem;
+        text-shadow: -5px 6px 4px black;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 7%;
+        box-shadow: none;
+        color: floralwhite; }
+      form .contacto .botones .btn:active {
+        background-image: url(../multimedia/Fondos/lila.png); }
+
+.form-check-input {
+  background-color: rgba(22, 22, 22, 0.2); }
+
+.form-check-input:checked {
+  background-color: rgba(0, 0, 0, 0); }
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.199);
+  color: #fcff2b; }
+
+.form-control:focus {
+  color: #fcff2b;
+  background-color: #13031833;
+  border-color: #461e9336; }
+
+.form-select {
+  color: #fcff2b;
+  background-color: rgba(0, 0, 0, 0.199);
+  text-shadow: 1px 1px 4px black; }
+  .form-select option {
+    color: #fcff2b;
+    background-color: #892be2c7;
+    text-shadow: 1px 1px 4px black; }
+
+.form-select:focus {
+  border-color: #350f4066; }
 
 * {
   margin: 0;
@@ -189,8 +301,11 @@ form {
   box-sizing: border-box;
   font-family: 'Chelsea Market', cursive; }
 
+.container {
+  max-width: 100%; }
+
 .encabezado {
-  background-image: url("../multimedia/Fondos/gotas-de-colores.jpg");
+  background-image: url("../multimedia/Fondos/cubos.jpg");
   overflow: visible;
   background-size: cover; }
 
@@ -218,7 +333,11 @@ form {
 .dropdown-menu {
   background-image: #000000ba; }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: white; }
+
+.navbar-dark .navbar-nav .nav-link {
   color: white; }
 
 main {
@@ -236,33 +355,19 @@ main {
   .principal .principal__titulo {
     margin-bottom: 7%; }
 
-.principal__presentacion p {
-  color: #580158; }
-
-.principal__trabajo p {
-  color: #580158; }
-
-.principal__fin p {
-  color: #580158; }
-
 h1 {
   margin-top: 10px;
   margin-bottom: 30px;
-  color: #580158;
+  color: black;
   font-size: 30px;
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  text-shadow: 4px 1px 20px #000000; }
 
-h2 {
-  color: #580158; }
-
-h3 {
-  color: #580158; }
-
-h4 {
-  color: #580158; }
-
-h6 {
-  color: #580158; }
+h2, h3, h4, h6 {
+  color: black;
+  text-align: center;
+  text-shadow: 4px 1px 20px #000000; }
 
 .principal__redes {
   margin: 10px 15px 10px 15px;
@@ -281,7 +386,7 @@ h6 {
 footer {
   display: flex;
   flex-direction: column;
-  background-image: url("../multimedia/Fondos/gotas-de-colores.jpg");
+  background-image: url("../multimedia/Fondos/cubos.jpg");
   background-size: 75%;
   align-items: center;
   padding: 2%; }
@@ -301,13 +406,21 @@ footer {
     width: 700px;
     height: 100%; }
   .contacto {
-    width: 95% !important; } }
+    width: 95% !important; }
+  .container {
+    max-width: 100%; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%; } }
+
+@media screen and (max-width: 576px) {
   .instagram {
     display: none; }
   .facebook {
     display: none; }
+  .container {
+    max-width: 100%; }
   footer .pie__redes {
     display: flex;
     flex-direction: row;
@@ -316,9 +429,15 @@ footer {
     justify-content: center; }
   .principal__foto img {
     display: none; }
+  .principal__video {
+    width: 95%; }
   .principal__gif img {
     border-radius: 30px;
     width: 106%; }
   .fotos {
     width: 400px;
     height: 100%; } }
+
+@media screen and (max-width: 321px) {
+  .encabezado__logo img {
+    width: 122%; } }

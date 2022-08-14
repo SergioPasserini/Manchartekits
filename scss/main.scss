@@ -1,4 +1,4 @@
-$gotas: url("../multimedia/Fondos/gotas-de-colores.jpg");
+$gotas: url("../multimedia/Fondos/cubos.jpg");
 $acua: url("../multimedia/Fondos/fondo1.jpg");
 $botonera: (
 	colores:(red, orange, green, cyan, blue, violet, red, ),
@@ -23,6 +23,11 @@ $botonera: (
 	padding: 0%;
 	box-sizing: border-box;
 	font-family: 'Chelsea Market', cursive;
+
+}
+
+.container {
+	max-width: 100%;
 }
 
 .encabezado {
@@ -44,11 +49,13 @@ $botonera: (
 .navbar-toggler-icon {
 	background-color: black;
 }
-.container-fluid{
+
+.container-fluid {
 	background-color: #000000ba;
-    background-size: unset;
-    border-radius: 30px;
+	background-size: unset;
+	border-radius: 30px;
 }
+
 .nav__checkbox {
 	display: none;
 }
@@ -58,11 +65,20 @@ $botonera: (
 }
 
 .dropdown-menu {
-	background-image:#000000ba;
+	background-image: #000000ba;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
 	color: rgb(255, 255, 255);
+}
+
+.navbar-dark {
+	.navbar-nav {
+		.nav-link {
+			color: white;
+		}
+	}
 }
 
 main {
@@ -78,44 +94,40 @@ main {
 	align-items: center;
 	padding-top: 4%;
 	padding-bottom: 15%;
-	.principal__titulo{
+
+	.principal__titulo {
 		margin-bottom: 7%;
 	}
 }
-.principal__presentacion{
-	p{
-		color:#580158;
-	}
-}
-.principal__trabajo{
-	p{
-		color:#580158;
-	}
-}
-.principal__fin{
-	p{
-		color:#580158;
-	}
-}
+
 h1 {
 	margin-top: 10px;
 	margin-bottom: 30px;
-	color:#580158;
+	color: black;
 	font-size: 30px;
 	text-align: center;
+	text-align: center;
+	text-shadow: 4px 1px 20px #000000;
 }
-h2{
-	color:#580158;
+
+h2 {
+	color: black;
+	text-align: center;
+	text-shadow: 4px 1px 20px #000000;
 }
-h3{
-	color:#580158;
+
+h3 {
+	@extend h2
 }
-h4{
-	color:#580158;
+
+h4 {
+	@extend h2
 }
-h6{
-	color:#580158;
+
+h6 {
+	@extend h2
 }
+
 .principal__redes {
 	margin: 10px 15px 10px 15px;
 	padding: 5px 2.5px;
@@ -127,6 +139,7 @@ h6{
 	top: 150px;
 	right: 5px;
 	position: fixed;
+
 	a {
 		display: block;
 	}
@@ -150,4 +163,5 @@ footer {
 .pie__redes {
 	display: none;
 }
+
 @import "media";
